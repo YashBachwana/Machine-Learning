@@ -34,8 +34,3 @@ This project focuses on training a Multi-Layer Perceptron (MLP) on the MNIST dat
 ### 6. t-SNE Visualization
 ![t-SNE](t-SNE.png)
 
-### 7. Fashion-MNIST Predictions
-- Use the trained MLP model to predict on the Fashion-MNIST dataset.
-- Observe the performance and compare the t-SNE visualizations of the second layer embeddings for both MNIST and Fashion-MNIST images.
-
-
