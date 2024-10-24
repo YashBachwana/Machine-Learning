@@ -32,10 +32,7 @@ This project focuses on training a Multi-Layer Perceptron (MLP) on the MNIST dat
 - Analyze common misclassifications between the digits based on the confusion matrix.
 
 ### 6. t-SNE Visualization
-- Plot t-SNE for embeddings from the second layer of the MLP:
-  - For the trained MLP
-  - For an untrained MLP
-- Contrast these visualizations to draw conclusions about how training affects the feature representation.
+![t-SNE](t-SNE.png)
 
 ### 7. Fashion-MNIST Predictions
 - Use the trained MLP model to predict on the Fashion-MNIST dataset.
