@@ -22,8 +22,9 @@ This project focuses on training a Multi-Layer Perceptron (MLP) on the MNIST dat
   - Output Layer: 10 neurons (corresponding to the 10 digit classes)
 
 ### 3. Model Training
-- Train the MLP on the MNIST dataset.
-- Implement and compare with Random Forest (RF) and Logistic Regression models.
+- MLP on the MNIST dataset.
+- Random Forest (RF) 
+- Logistic Regression models.
 
 ### 4. Performance Analysis
 ![confusion_matrix](confusion_matrix.png)
