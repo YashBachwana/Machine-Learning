@@ -27,7 +27,9 @@ def create_model_vgg1():
     opt = SGD(learning_rate=0.01)
     model.compile(optimizer=opt, loss='binary_crossentropy', metrics=['accuracy'])
     return model
-
+```
+    
+    ```python
 def create_model_vgg3():
     model = Sequential([
         Input(shape=(224, 224, 3)),
