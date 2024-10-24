@@ -60,3 +60,36 @@ data_gen = ImageDataGenerator(
     fill_mode='nearest'      
 )
 ```
+
+### Transfer Learning with VGG16 
+1. All Layers Tuned
+```python
+model_transfer_all = Sequential([
+    base_model,
+    Flatten(),  # Use global average pooling to reduce the spatial dimensions
+    Dense(512, activation='relu'),  # A dense layer as a hidden layer
+    Dense(256, activation='relu'),  # A dense layer as a hidden layer
+    Dense(1, activation='sigmoid')  # Output layer for binary classification
+])
+```
+2. Only MLP Layers Tuned
+```python
+model_transfer_mlp = Sequential([
+    base_model_mlp,
+    Flatten(),
+    Dense(256, activation='relu'),
+    Dense(1, activation='sigmoid')
+])
+```
+### Comparative Analysis
+
+| Model                                    | Train Time (mins) | Train Loss | Train Acc (%) | Test Acc (%) | Params (M)   |
+|------------------------------------------|--------------------|------------|----------------|---------------|---------------|
+| VGG (1 block)                           | 0.20               | 0.2174     | 92.66          | 88.89         | 50,467,969    |
+| VGG (3 blocks)                          | 1.07               | 0.1627     | 95.48          | 91.11         | 11,169,089    |
+| VGG (3 blocks) with augmentation        | 1.00               | 0.0405     | 98.68          | 97.78         | 11,169,089    |
+| Transfer Learning (VGG16, all layers)  | 19.69              | 0.0190     | 100.00         | 100.00        | 27,691,841    |
+| Transfer Learning (VGG16, MLP only)    | 6.96               | 0.0012     | 100.00         | 100.00        | 21,137,729    |
+| MLP Model                                | 0.05               | 0.4922     | 75.71          | 73.33         | 0.01          |
+
+
