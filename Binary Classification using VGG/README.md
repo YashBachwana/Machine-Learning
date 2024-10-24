@@ -29,7 +29,7 @@ def create_model_vgg1():
     return model
 ```
     
-    ```python
+```python
 def create_model_vgg3():
     model = Sequential([
         Input(shape=(224, 224, 3)),
