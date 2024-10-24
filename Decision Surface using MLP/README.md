@@ -1,7 +1,7 @@
 # XOR Dataset Classification Project
 
 ## Overview
-This project aims to train various models on the XOR dataset, which is a classic problem in machine learning. The objective is to have all models achieve similar performance, effectively capturing the XOR function's characteristics. 
+This project aims to train various models on the XOR dataset, which is a classic problem in machine learning. The objective is compare the performance of different models on this binary classification task.
 
 ### Models implemented:
 1. Multi-Layer Perceptron (MLP)
