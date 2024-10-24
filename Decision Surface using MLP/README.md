@@ -3,7 +3,7 @@
 ## Overview
 This project aims to train various models on the XOR dataset, which is a classic problem in machine learning. The objective is to have all models achieve similar performance, effectively capturing the XOR function's characteristics. 
 
-### Models to be Implemented
+### Models implemented:
 1. Multi-Layer Perceptron (MLP)
 2. MLP with L1 Regularization
 3. MLP with L2 Regularization
