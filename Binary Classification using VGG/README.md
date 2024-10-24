@@ -1,4 +1,4 @@
-# Apple vs Banana Classification
+# Apple vs Banana Classification using VGG
 
 This project aims to compare the performance of various models on a binary classification task to distinguish between images of apples and bananas. The models being evaluated include different configurations of the VGG architecture, as well as transfer learning approaches.
 
