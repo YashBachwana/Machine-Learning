@@ -9,6 +9,7 @@ You will be expected to use this to make trees for:
 from dataclasses import dataclass
 from typing import Literal
 
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
